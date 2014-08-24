@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author cae
  */
-public class PolygonTester 
+public class PolygonTester  
 {
     public static void main(String[] args) 
     {
@@ -45,20 +45,40 @@ public class PolygonTester
                      break;
         }
         
-        double triangleDimension1;
         
         if (PolygonString.equals ("Triangle"))
         {
             System.out.println("Enter triangle side 1 length: ");
-            triangleDimension1 = input.nextDouble();
+            double triangleDimension1 = input.nextDouble();
             System.out.println("Enter triangle side 2 length: ");
             double triangleDimension2 = input.nextDouble();
             System.out.println("Enter triangle side 3 length: ");
             double triangleDimension3 = input.nextDouble();
             System.out.println("Enter triangle height: ");
-            double triangleHeight = input.nextDouble();
+            double triangleHeight = input.nextDouble();   
             
+            Triangle Dimensions = new Triangle(triangleDimension1, triangleDimension2, triangleDimension3, triangleHeight );
+            Dimensions.triangleArea(Dimensions);
+            Dimensions.trianglePerimeter(Dimensions);
+ 
         }
-        
+        else if (PolygonString.equals ("Quadrilateral"))
+        {
+            System.out.println("Enter quadrilateral side 1 length: ");
+            double quadDimension1 = input.nextDouble();
+            System.out.println("Enter quadrilateral side 2 length: ");
+            double quadDimension2 = input.nextDouble();
+            System.out.println("Enter quadrilateral side 3 length: ");
+            double quadDimension3 = input.nextDouble();
+            System.out.println("Enter quadrilateral side 4 length: ");
+            double quadDimension4 = input.nextDouble();
+            System.out.println("Enter quadrilateral diagonal length:");
+            double diagLength = input.nextDouble();
+            
+            Quadrilateral Dimensions = new Quadrilateral(quadDimension1, quadDimension2, quadDimension3, quadDimension4, diagLength);
+            Dimensions.quadArea(Dimensions);
+            Dimensions.quadPerimeter(Dimensions);
+        }
     }
+    
 }

@@ -20,8 +20,8 @@ public class Polygon
 
 interface PolygonInterface
 {
-    abstract void area();
-    abstract void perimeter();
+    double area(double triArea);
+    double perimeter(double triPerimeter);
 }
 
 
