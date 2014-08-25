@@ -8,18 +8,8 @@ package polygon;
  * @author Casey Lee
  */
 
-public class Polygon 
-{
 
-
-}
-/**
- *
- * @param area-
- * @area Contains code
- * 
- */
-interface PolygonInterface
+interface Polygon
 {
     double area();
     double perimeter();

@@ -10,7 +10,7 @@ package polygon;
  *
  * @author cae
  */
-public abstract class Rectangle implements PolygonInterface 
+public abstract class Rectangle implements Polygon
 {
     
 }

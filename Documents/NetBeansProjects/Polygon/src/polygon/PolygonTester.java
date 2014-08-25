@@ -12,7 +12,7 @@ import java.util.Scanner;
  * Polygon Tester allows user to input type of Polygon and outputs their area and perimeter
  * @author cae
  */
-public class PolygonTester  
+public class PolygonTester implements Polygon
 {
     public static void main(String[] args) 
     {
@@ -60,7 +60,7 @@ public class PolygonTester
             System.out.println("Enter triangle height: ");
             double triangleHeight = input.nextDouble();   
             
-            Triangle Dimensions = new Triangle(triangleDimension1, triangleDimension2, triangleDimension3, triangleHeight );
+            Polygon Dimensions = new Triangle(triangleDimension1, triangleDimension2, triangleDimension3, triangleHeight );
             System.out.println("Area of the triangle is: "+Dimensions.area());
             System.out.println("Area of the triangle is: "+Dimensions.perimeter());
             

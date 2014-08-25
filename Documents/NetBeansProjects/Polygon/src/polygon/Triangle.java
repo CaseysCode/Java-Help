@@ -10,7 +10,7 @@ package polygon;
  *
  * @author cae
  */
-public class Triangle implements PolygonInterface 
+public class Triangle implements Polygon
 {
     private double TriSide1, TriSide2, TriSide3, triangleHeight; 
     public Triangle (double TriSide1, double TriSide2, double TriSide3, double triangleHeight)

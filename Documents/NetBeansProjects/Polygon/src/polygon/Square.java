@@ -10,7 +10,7 @@ package polygon;
  *
  * @author cae
  */
-public abstract class Square implements PolygonInterface
+public abstract class Square implements Polygon
 {
     
 }

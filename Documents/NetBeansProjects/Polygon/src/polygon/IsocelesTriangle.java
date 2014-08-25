@@ -10,7 +10,7 @@ package polygon;
  *
  * @author cae
  */
-public abstract class IsocelesTriangle implements PolygonInterface
+public abstract class IsocelesTriangle implements Polygon
 {
     
 }

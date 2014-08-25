@@ -10,7 +10,7 @@ package polygon;
  *
  * @author cae
  */
-public  class Quadrilateral implements PolygonInterface 
+public  class Quadrilateral implements Polygon 
 {
     private double quadSide1, quadSide2, quadSide3, quadSide4, diagLength; 
     public Quadrilateral (double quadSide1, double quadSide2, double quadSide3, double quadSide4, double quadLength)
