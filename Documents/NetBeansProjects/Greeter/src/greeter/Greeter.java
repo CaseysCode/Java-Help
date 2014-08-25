@@ -1,6 +1,10 @@
-/*
- * 
- */
+/**
+* Class Name: Greeter Tester
+* Author: Casey Lee
+* Class Description: contains a Greeter object of String type
+* and contains a swapNames method which accepts greeter objects and outputs
+* the new and old names and swaps them
+*/
 
 package greeter;
 

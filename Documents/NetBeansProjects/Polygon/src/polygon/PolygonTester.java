@@ -9,14 +9,16 @@ package polygon;
 import java.util.Scanner;
 
 /**
- *
+ * Polygon Tester allows user to input type of Polygon and outputs their area and perimeter
  * @author cae
  */
 public class PolygonTester  
 {
     public static void main(String[] args) 
     {
-        
+        /**
+         * @param 
+         */
         Scanner input = new Scanner(System.in);
         
         System.out.println ("Polygon Types: ");
@@ -26,6 +28,7 @@ public class PolygonTester
 	System.out.println  (" 4 - RECTANGLE" );
 	System.out.println  (" 5 - SQUARE") ;
 	System.out.println  ("Enter 1 - 5 for polygon type: ");
+        
         int PolygonChoice = input.nextInt();
        
         
@@ -58,8 +61,15 @@ public class PolygonTester
             double triangleHeight = input.nextDouble();   
             
             Triangle Dimensions = new Triangle(triangleDimension1, triangleDimension2, triangleDimension3, triangleHeight );
-            Dimensions.triangleArea(Dimensions);
-            Dimensions.trianglePerimeter(Dimensions);
+            System.out.println("Area of the triangle is: "+Dimensions.area());
+            System.out.println("Area of the triangle is: "+Dimensions.perimeter());
+            
+            
+            //Triangle Dimensions = new Triangle(triangleDimension1, triangleDimension2, triangleDimension3, triangleHeight );
+            
+           // Dimensions.triangleArea(Dimensions);
+            
+           // Dimensions.trianglePerimeter(Dimensions);
  
         }
         else if (PolygonString.equals ("Quadrilateral"))
@@ -75,9 +85,9 @@ public class PolygonTester
             System.out.println("Enter quadrilateral diagonal length:");
             double diagLength = input.nextDouble();
             
-            Quadrilateral Dimensions = new Quadrilateral(quadDimension1, quadDimension2, quadDimension3, quadDimension4, diagLength);
-            Dimensions.quadArea(Dimensions);
-            Dimensions.quadPerimeter(Dimensions);
+            Quadrilateral Dimensions = new Quadrilateral(quadDimension1, quadDimension2, quadDimension3, quadDimension4, diagLength );
+            System.out.println("Area of the triangle is: "+Dimensions.area());
+            System.out.println("Area of the triangle is: "+Dimensions.perimeter());
         }
     }
     

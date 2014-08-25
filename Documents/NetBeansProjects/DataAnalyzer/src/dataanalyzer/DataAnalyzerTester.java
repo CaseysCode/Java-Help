@@ -1,7 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Class name: DataAnalyzerTester
+ * Author: Casey Lee
+ * Description: Prompts user to input a file name and contains a while loop to 
+ * catch if it is a correct file name and continue to prompt for file name until 
+ * a correct one is entered. Stores the input file name as an object
  */
 
 package dataanalyzer;
@@ -12,7 +14,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author cae
+ * @author Casey Lee
  */
 public class DataAnalyzerTester 
 {

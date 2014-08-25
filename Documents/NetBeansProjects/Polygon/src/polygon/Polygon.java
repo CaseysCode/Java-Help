@@ -1,27 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
 
 package polygon;
 
-
-
 /**
- *
- * @author cae
+ * Polygon class contains an interface with an area() method and perimeter method of double type
+ * @author Casey Lee
  */
+
 public class Polygon 
 {
 
 
 }
-
+/**
+ *
+ * @param area-
+ * @area Contains code
+ * 
+ */
 interface PolygonInterface
 {
-    double area(double triArea);
-    double perimeter(double triPerimeter);
+    double area();
+    double perimeter();
 }
 
 

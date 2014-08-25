@@ -22,24 +22,14 @@ public  class Quadrilateral implements PolygonInterface
         this.diagLength = diagLength; 
     }
     
-    public double quadArea(Quadrilateral dimensions)
-    {
-        double quadArea = (quadSide1 * quadSide2);
-        System.out.println("The quadrilateral's area is: "+ quadArea);
-        return quadArea; 
-        
-    } 
-    public double quadPerimeter(Quadrilateral dimensions)
-    {
-        double quadPerimeter = (quadSide1 + quadSide2 +quadSide3);
-        System.out.println("The quadrilateral's perimeter is: "+quadPerimeter);
-        return quadPerimeter;
-    }
     
-    public double area(double quadArea){
+    
+    public double area(){
+        double quadArea = (quadSide1 + quadSide2 + quadSide3 + quadSide4 +diagLength);
         return quadArea;
     }
-    public double perimeter(double triPerimeter){
+    public double perimeter(){
+        double triPerimeter = (quadSide1 + quadSide2 + quadSide3 + quadSide4 +diagLength);
         return triPerimeter;
     }
 }

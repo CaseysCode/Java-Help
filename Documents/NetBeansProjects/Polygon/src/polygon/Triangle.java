@@ -21,24 +21,12 @@ public class Triangle implements PolygonInterface
         this.triangleHeight = triangleHeight; 
     }
     
-    public double triangleArea(Triangle dimensions)
-    {
+    public double area(){
         double triArea = 0.5 * (TriSide1 * triangleHeight);
-        System.out.println("The triangle's area is: "+ triArea);
-        return triArea; 
-        
-    } 
-    public double trianglePerimeter(Triangle dimensions)
-    {
-        double triPerimeter = (TriSide1 + TriSide2 +TriSide3);
-        System.out.println("The triangle's perimeter is: "+triPerimeter);
-        return triPerimeter;
-    }
-    
-    public double area(double triArea){
         return triArea;
     }
-    public double perimeter(double triPerimeter){
+    public double perimeter(){
+        double triPerimeter = (TriSide1 + TriSide2 +TriSide3);
         return triPerimeter;
     }
 
